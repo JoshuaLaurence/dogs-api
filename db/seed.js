@@ -1,13 +1,13 @@
-const {sequelize} = require('./db');
-const seed = require('./seedFn');
+const {sequelize} = require("./db");
+const seed = require("./seedFn");
 
 seed()
-  .then(() => {
-    console.log('Seeding success. Arf!');
-  })
-  .catch(err => {
-    console.error(err);
-  })
-  .finally(() => {
-    sequelize.close();
-  });
+	.then(() => {
+		console.log("Seeding success. Arf!");
+	})
+	.catch((err) => {
+		console.error(err);
+	})
+	.finally(() => {
+		sequelize.close();
+	});
